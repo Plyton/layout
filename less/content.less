@@ -1,0 +1,33 @@
+.content {
+	width: @width;
+	padding: 10px;
+	background-color: @bgc-main;
+	border: @border;
+
+	&-title {
+		display: block;
+		width: 100%;
+		.text(Verdana, bold, 14px);
+	}
+	
+	&-txt {
+		width: 80%;
+		margin: 0 auto;
+		.txt()
+	}
+
+	&-btn {
+		display: block;
+		width: @width/10;
+		background-color: @link-bgc;
+
+		&:hover {
+			background-color: saturate(@link-bgc, 10%);
+		}
+
+		&:active {
+			background-color: desaturate(@link-bgc, 20%);
+		}
+	}
+
+}
